@@ -1,0 +1,194 @@
+/* Base Styles for Body and HTML */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2px;
+    background-color: #f4f4f4;
+     border: blank;
+}
+
+/* Styling for Main Containers */
+.container1 {
+    width: 80%;
+    padding: 40px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+}
+
+/* Header and General Text Alignment */
+h1, h2, h3, p {
+    text-align: left;
+    color: #333;
+}
+
+/* Profile and Box Sections */
+.profile-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.profile-image {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    margin-right: 20px; /* Adds space between the image and the text */
+}
+
+.profile-image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 7px solid #0091ce;
+}
+
+.profile-text {
+    flex-grow: 1; /* Allows the text block to take up the remaining space */
+    display: flex;
+    flex-direction: column; /* Stacks the text vertically */
+}
+
+.profile-text h3, .profile-text p {
+    margin: center; /* Adds spacing below each text element */
+}
+
+/* Enhance readability and visual appeal */
+.profile-text p {
+    line-height: 1.6; /* Increases line height for better readability */
+    color: #666; /* Dim color for less contrast */
+}
+
+
+/* Search Box and Button Styling */
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*bocx style*/
+.container {
+    width: 80%;
+    Padding: 40px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space boxes evenly */
+    /* Grid properties for two-column layout */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Spacing between boxes */
+  }
+  
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+    /* Flex properties for equal sizing */
+    flex: 1 1 1; /* Flex-grow: 1, Flex-shrink: 1, Flex-basis: 0 */
+    padding: 40px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+
+/* Small Box Button Styling */
+.small-box {
+    padding: 8px;
+    border: none;
+    background-color: #e0e0e0; /* Light grey background */
+    color: #333;
+    box-shadow: none; /* Removes box-shadow */
+    margin-top: 5px; /* Small top margin */
+}
+
+.small-box:hover {
+    background-color: #ccc; /* Darker grey on hover */
+}
+
+/* Layout Adjustments for Boxes */
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-container button {
+    flex: 1 1 auto; /* Allows buttons to grow and shrink */
+    min-width: 100px; /* Minimum width for each button */
+}
+
+
+/* card footer page no*/
+
+.card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-btn {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.page-btn:hover {
+    background-color: #0056b3;
+}
+
+.page-btn:focus {
+    outline: none;  /* Removes the default focus outline */
+}
